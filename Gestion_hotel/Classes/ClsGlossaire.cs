@@ -68,9 +68,72 @@ namespace Gestion_hotel.Classes
             {
                 InitialiseConnexion();
                 con.Open();
-                cmd = new SqlCommand("EXEC saveCategorie @id,@desgnation", con);
+                cmd = new SqlCommand("EXEC saveCategorisation @id,@desgnation", con);
                 cmd.Parameters.AddWithValue("@id", Cli.Id);
                 cmd.Parameters.AddWithValue("@desgnation", Cli.Desgnation);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void SaveReservation(ClsReservation Cli)
+        {
+            try
+            {
+                InitialiseConnexion();
+                con.Open();
+                cmd = new SqlCommand("EXEC saveReservation @id,@refClient,@refChabre,@dateEntree", con);
+                cmd.Parameters.AddWithValue("@id", Cli.Id);
+                cmd.Parameters.AddWithValue("@refClient", Cli.RefClient);
+                cmd.Parameters.AddWithValue("@refChabre", Cli.RefChabre);
+                cmd.Parameters.AddWithValue("@dateEntree", Cli.DateEntree);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void SaveChambre(ClsChambre Cli)
+        {
+            try
+            {
+                InitialiseConnexion();
+                con.Open();
+                cmd = new SqlCommand("EXEC saveChambre @id,@numero,@contact,@refClasse", con);
+                cmd.Parameters.AddWithValue("@id", Cli.Id);
+                cmd.Parameters.AddWithValue("@numero", Cli.Numero);
+                cmd.Parameters.AddWithValue("@contact", Cli.Contact);
+                cmd.Parameters.AddWithValue("@refClasse", Cli.RefClasse);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void SaveClasse(ClsClasse Cli)
+        {
+            try
+            {
+                InitialiseConnexion();
+                con.Open();
+                cmd = new SqlCommand("EXEC saveClasse @id,@designation,@prix,@refCategorisation", con);
+                cmd.Parameters.AddWithValue("@id", Cli.Id);
+                cmd.Parameters.AddWithValue("@designation", Cli.Designation);
+                cmd.Parameters.AddWithValue("@prix", Cli.Prix);
+                cmd.Parameters.AddWithValue("@refCategorisation", Cli.RefCategorisation);
                 cmd.ExecuteNonQuery();
                 con.Close();
 

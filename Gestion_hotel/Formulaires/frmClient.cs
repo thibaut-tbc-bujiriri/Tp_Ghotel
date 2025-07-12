@@ -20,7 +20,58 @@ namespace Gestion_hotel.Formulaires
 
         ClsClient client = new ClsClient();
 
+        public void saveClient(int a)
+        {
+            client.Noms = txtNomClient.Text;
+            client.Adresse = txtAdresseClient.Text;
+            client.Contact = txtContactClient.Text;
 
+            if (a == 1)
+            {
+                if(txtNomClient.Text == "" || txtAdresseClient.Text == "" || txtContactClient.Text == "")
+                {
+                    MessageBox.Show("Veuillez remplir tous les champs", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    client.Id = -1;
+                    ClsGlossaire.GetInstance().SaveClient(client);
+                    dgvClient.DataSource = ClsGlossaire.GetInstance().loadData("Client");
+                    MessageBox.Show("Client Enregistré avec succès", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    clear();
+                }
+                
+            }
+            else if (a == 2)
+            {
+                if (txtNomClient.Text == "" || txtAdresseClient.Text == "" || txtContactClient.Text == "")
+                {
+                    MessageBox.Show("Veuillez remplir tous les champs", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    client.Id = int.Parse(txtIdClient.Text);
+                    ClsGlossaire.GetInstance().SaveClient(client);
+                    dgvClient.DataSource = ClsGlossaire.GetInstance().loadData("Client");
+                    MessageBox.Show("Client Modifié avec succès", "Modification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    clear();
+                }
+            }
+            else if (a == 3)
+            {
+                if (txtNomClient.Text == "" || txtAdresseClient.Text == "" || txtContactClient.Text == "")
+                {
+                    MessageBox.Show("Veuillez remplir tous les champs", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    ClsGlossaire.GetInstance().DeleteData("tClient", "Id", int.Parse(txtIdClient.Text));
+                    dgvClient.DataSource = ClsGlossaire.GetInstance().loadData("Client");
+                    MessageBox.Show("Client Supprimé avec succès", "Suppression", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    clear();
+                }
+            }
+        }
 
         private void frmClient_Load(object sender, EventArgs e)
         {
@@ -34,10 +85,32 @@ namespace Gestion_hotel.Formulaires
             txtAdresseClient.Text = "";
             txtContactClient.Text = "";
         }
+        public void clear()
+        {
+            txtIdClient.Text = "";
+            txtNomClient.Text = "";
+            txtAdresseClient.Text = "";
+            txtContactClient.Text = "";
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAddClient_Click(object sender, EventArgs e)
+        {
+            saveClient(1);
+        }
+
+        private void btnModClient_Click(object sender, EventArgs e)
+        {
+            saveClient(2);
+        }
+
+        private void btnDeleteClient_Click(object sender, EventArgs e)
+        {
+            saveClient(3);
         }
     }
 }

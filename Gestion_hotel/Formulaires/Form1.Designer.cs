@@ -63,6 +63,7 @@
             // 
             // btnClient
             // 
+            btnClient.Cursor = Cursors.Hand;
             btnClient.CustomizableEdges = customizableEdges1;
             btnClient.DisabledState.BorderColor = Color.DarkGray;
             btnClient.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -71,10 +72,10 @@
             btnClient.FillColor = Color.Black;
             btnClient.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnClient.ForeColor = Color.White;
-            btnClient.Location = new Point(112, 29);
+            btnClient.Location = new Point(111, 29);
             btnClient.Name = "btnClient";
             btnClient.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnClient.Size = new Size(145, 50);
+            btnClient.Size = new Size(146, 50);
             btnClient.TabIndex = 2;
             btnClient.Text = "CLIENT";
             btnClient.Click += btnClient_Click;
@@ -84,7 +85,7 @@
             ptBox.Image = Properties.Resources.sac;
             ptBox.Location = new Point(399, 130);
             ptBox.Name = "ptBox";
-            ptBox.Size = new Size(597, 530);
+            ptBox.Size = new Size(819, 530);
             ptBox.SizeMode = PictureBoxSizeMode.Zoom;
             ptBox.TabIndex = 0;
             ptBox.TabStop = false;

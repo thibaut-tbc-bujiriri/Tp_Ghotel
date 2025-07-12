@@ -213,6 +213,7 @@
             txtIdClient.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             txtIdClient.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtIdClient.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtIdClient.Enabled = false;
             txtIdClient.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtIdClient.Font = new Font("Segoe UI", 9F);
             txtIdClient.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
@@ -340,6 +341,7 @@
             btnAddClient.Size = new Size(123, 46);
             btnAddClient.TabIndex = 14;
             btnAddClient.Text = "Ajouter";
+            btnAddClient.Click += btnAddClient_Click;
             // 
             // btnModClient
             // 
@@ -358,6 +360,7 @@
             btnModClient.Size = new Size(123, 46);
             btnModClient.TabIndex = 15;
             btnModClient.Text = "Modifier";
+            btnModClient.Click += btnModClient_Click;
             // 
             // btnDeleteClient
             // 
@@ -376,6 +379,7 @@
             btnDeleteClient.Size = new Size(123, 46);
             btnDeleteClient.TabIndex = 16;
             btnDeleteClient.Text = "Supprimer";
+            btnDeleteClient.Click += btnDeleteClient_Click;
             // 
             // button1
             // 
