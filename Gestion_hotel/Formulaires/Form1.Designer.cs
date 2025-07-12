@@ -144,6 +144,7 @@
             guna2Button1.Size = new Size(232, 81);
             guna2Button1.TabIndex = 3;
             guna2Button1.Text = "RESERVATION";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // btnClient
             // 

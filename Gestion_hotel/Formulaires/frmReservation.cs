@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gestion_hotel.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace Gestion_hotel.Formulaires
         public frmReservation()
         {
             InitializeComponent();
+        }
+
+        private void frmReservation_Load(object sender, EventArgs e)
+        {
+            dgvReserv.DataSource = ClsGlossaire.GetInstance().loadData("Reservation");
         }
     }
 }

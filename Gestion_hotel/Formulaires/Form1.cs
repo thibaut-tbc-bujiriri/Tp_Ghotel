@@ -38,5 +38,11 @@ namespace Gestion_hotel
         {
             this.Close();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            frmReservation res = new frmReservation();
+            res.ShowDialog();
+        }
     }
 }
