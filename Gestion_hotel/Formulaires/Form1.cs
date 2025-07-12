@@ -1,4 +1,5 @@
 using Gestion_hotel.Classes;
+using Gestion_hotel.Formulaires;
 using Microsoft.Data.SqlClient;
 using System.Drawing;
 
@@ -22,14 +23,20 @@ namespace Gestion_hotel
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-           this.Close();
-        }
-
         private void ptBox_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bienvenu dans notre hotel !","Accueil",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("Bienvenu dans notre hotel !", "Accueil", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            frmClient client = new frmClient();
+            client.ShowDialog();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

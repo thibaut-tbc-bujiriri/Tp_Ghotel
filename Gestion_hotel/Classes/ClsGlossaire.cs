@@ -62,6 +62,25 @@ namespace Gestion_hotel.Classes
             }
         }
 
+        public void SaveCategorisation(ClsCategorisation Cli)
+        {
+            try
+            {
+                InitialiseConnexion();
+                con.Open();
+                cmd = new SqlCommand("EXEC saveCategorie @id,@desgnation", con);
+                cmd.Parameters.AddWithValue("@id", Cli.Id);
+                cmd.Parameters.AddWithValue("@desgnation", Cli.Desgnation);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         public DataTable loadData(string nomTable)
         {
 
