@@ -38,20 +38,17 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReservation));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             button1 = new Button();
-            btnDeleteReserv = new Guna.UI2.WinForms.Guna2Button();
             btnModReserv = new Guna.UI2.WinForms.Guna2Button();
             btnAddReserv = new Guna.UI2.WinForms.Guna2Button();
             btnActReserv = new Guna.UI2.WinForms.Guna2Button();
@@ -87,29 +84,10 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // btnDeleteReserv
-            // 
-            btnDeleteReserv.BorderRadius = 5;
-            btnDeleteReserv.CustomizableEdges = customizableEdges1;
-            btnDeleteReserv.DisabledState.BorderColor = Color.DarkGray;
-            btnDeleteReserv.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnDeleteReserv.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnDeleteReserv.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnDeleteReserv.FillColor = Color.Black;
-            btnDeleteReserv.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDeleteReserv.ForeColor = Color.White;
-            btnDeleteReserv.Location = new Point(785, 262);
-            btnDeleteReserv.Name = "btnDeleteReserv";
-            btnDeleteReserv.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnDeleteReserv.Size = new Size(123, 46);
-            btnDeleteReserv.TabIndex = 34;
-            btnDeleteReserv.Text = "Supprimer";
-            btnDeleteReserv.Click += btnDeleteReserv_Click;
-            // 
             // btnModReserv
             // 
             btnModReserv.BorderRadius = 5;
-            btnModReserv.CustomizableEdges = customizableEdges3;
+            btnModReserv.CustomizableEdges = customizableEdges1;
             btnModReserv.DisabledState.BorderColor = Color.DarkGray;
             btnModReserv.DisabledState.CustomBorderColor = Color.DarkGray;
             btnModReserv.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -117,9 +95,9 @@
             btnModReserv.FillColor = Color.Black;
             btnModReserv.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnModReserv.ForeColor = Color.White;
-            btnModReserv.Location = new Point(656, 262);
+            btnModReserv.Location = new Point(740, 262);
             btnModReserv.Name = "btnModReserv";
-            btnModReserv.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnModReserv.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnModReserv.Size = new Size(123, 46);
             btnModReserv.TabIndex = 33;
             btnModReserv.Text = "Modifier";
@@ -128,7 +106,7 @@
             // btnAddReserv
             // 
             btnAddReserv.BorderRadius = 5;
-            btnAddReserv.CustomizableEdges = customizableEdges5;
+            btnAddReserv.CustomizableEdges = customizableEdges3;
             btnAddReserv.DisabledState.BorderColor = Color.DarkGray;
             btnAddReserv.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddReserv.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -136,9 +114,9 @@
             btnAddReserv.FillColor = Color.Black;
             btnAddReserv.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddReserv.ForeColor = Color.White;
-            btnAddReserv.Location = new Point(527, 262);
+            btnAddReserv.Location = new Point(593, 262);
             btnAddReserv.Name = "btnAddReserv";
-            btnAddReserv.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnAddReserv.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnAddReserv.Size = new Size(123, 46);
             btnAddReserv.TabIndex = 32;
             btnAddReserv.Text = "Ajouter";
@@ -147,7 +125,7 @@
             // btnActReserv
             // 
             btnActReserv.BorderRadius = 5;
-            btnActReserv.CustomizableEdges = customizableEdges7;
+            btnActReserv.CustomizableEdges = customizableEdges5;
             btnActReserv.DisabledState.BorderColor = Color.DarkGray;
             btnActReserv.DisabledState.CustomBorderColor = Color.DarkGray;
             btnActReserv.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -155,9 +133,9 @@
             btnActReserv.FillColor = Color.Black;
             btnActReserv.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnActReserv.ForeColor = Color.White;
-            btnActReserv.Location = new Point(398, 262);
+            btnActReserv.Location = new Point(448, 262);
             btnActReserv.Name = "btnActReserv";
-            btnActReserv.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnActReserv.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnActReserv.Size = new Size(123, 46);
             btnActReserv.TabIndex = 31;
             btnActReserv.Text = "Actualiser";
@@ -166,7 +144,7 @@
             // txtSearchReserv
             // 
             txtSearchReserv.BorderRadius = 15;
-            txtSearchReserv.CustomizableEdges = customizableEdges9;
+            txtSearchReserv.CustomizableEdges = customizableEdges7;
             txtSearchReserv.DefaultText = "";
             txtSearchReserv.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSearchReserv.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -179,14 +157,15 @@
             txtSearchReserv.Name = "txtSearchReserv";
             txtSearchReserv.PlaceholderText = "";
             txtSearchReserv.SelectedText = "";
-            txtSearchReserv.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtSearchReserv.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtSearchReserv.Size = new Size(510, 36);
             txtSearchReserv.TabIndex = 30;
+            txtSearchReserv.TextChanged += txtSearchReserv_TextChanged;
             // 
             // txtIdReserv
             // 
             txtIdReserv.BorderRadius = 15;
-            txtIdReserv.CustomizableEdges = customizableEdges11;
+            txtIdReserv.CustomizableEdges = customizableEdges9;
             txtIdReserv.DefaultText = "";
             txtIdReserv.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtIdReserv.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -200,7 +179,7 @@
             txtIdReserv.Name = "txtIdReserv";
             txtIdReserv.PlaceholderText = "";
             txtIdReserv.SelectedText = "";
-            txtIdReserv.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtIdReserv.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtIdReserv.Size = new Size(188, 36);
             txtIdReserv.TabIndex = 26;
             // 
@@ -341,15 +320,15 @@
             // 
             txtDateEntree.BorderRadius = 15;
             txtDateEntree.Checked = true;
-            txtDateEntree.CustomizableEdges = customizableEdges13;
+            txtDateEntree.CustomizableEdges = customizableEdges11;
             txtDateEntree.FillColor = Color.White;
             txtDateEntree.Font = new Font("Segoe UI", 9F);
-            txtDateEntree.Format = DateTimePickerFormat.Custom;
+            txtDateEntree.Format = DateTimePickerFormat.Long;
             txtDateEntree.Location = new Point(450, 208);
             txtDateEntree.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             txtDateEntree.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             txtDateEntree.Name = "txtDateEntree";
-            txtDateEntree.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtDateEntree.ShadowDecoration.CustomizableEdges = customizableEdges12;
             txtDateEntree.Size = new Size(414, 36);
             txtDateEntree.TabIndex = 36;
             txtDateEntree.Value = new DateTime(2025, 7, 13, 0, 8, 52, 864);
@@ -358,7 +337,7 @@
             // 
             cmbRefClient.BackColor = Color.Transparent;
             cmbRefClient.BorderRadius = 15;
-            cmbRefClient.CustomizableEdges = customizableEdges15;
+            cmbRefClient.CustomizableEdges = customizableEdges13;
             cmbRefClient.DrawMode = DrawMode.OwnerDrawFixed;
             cmbRefClient.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbRefClient.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -368,7 +347,7 @@
             cmbRefClient.ItemHeight = 30;
             cmbRefClient.Location = new Point(450, 101);
             cmbRefClient.Name = "cmbRefClient";
-            cmbRefClient.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            cmbRefClient.ShadowDecoration.CustomizableEdges = customizableEdges14;
             cmbRefClient.Size = new Size(413, 36);
             cmbRefClient.TabIndex = 37;
             // 
@@ -376,7 +355,7 @@
             // 
             cmbRefChambre.BackColor = Color.Transparent;
             cmbRefChambre.BorderRadius = 15;
-            cmbRefChambre.CustomizableEdges = customizableEdges17;
+            cmbRefChambre.CustomizableEdges = customizableEdges15;
             cmbRefChambre.DrawMode = DrawMode.OwnerDrawFixed;
             cmbRefChambre.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbRefChambre.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -386,7 +365,7 @@
             cmbRefChambre.ItemHeight = 30;
             cmbRefChambre.Location = new Point(451, 143);
             cmbRefChambre.Name = "cmbRefChambre";
-            cmbRefChambre.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            cmbRefChambre.ShadowDecoration.CustomizableEdges = customizableEdges16;
             cmbRefChambre.Size = new Size(413, 36);
             cmbRefChambre.TabIndex = 38;
             // 
@@ -399,7 +378,6 @@
             Controls.Add(cmbRefClient);
             Controls.Add(txtDateEntree);
             Controls.Add(button1);
-            Controls.Add(btnDeleteReserv);
             Controls.Add(btnModReserv);
             Controls.Add(btnAddReserv);
             Controls.Add(btnActReserv);
@@ -428,7 +406,6 @@
         #endregion
 
         private Button button1;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteReserv;
         private Guna.UI2.WinForms.Guna2Button btnModReserv;
         private Guna.UI2.WinForms.Guna2Button btnAddReserv;
         private Guna.UI2.WinForms.Guna2Button btnActReserv;

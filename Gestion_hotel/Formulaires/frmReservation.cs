@@ -1,4 +1,5 @@
 ﻿using Gestion_hotel.Classes;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,9 +25,9 @@ namespace Gestion_hotel.Formulaires
         {
             try
             {
-                res.RefClient = int.Parse(ClsGlossaire.GetInstance().getcode_Combo("Client", "id", "noms", "adresse", "contact", cmbRefClient.Text));
-                res.RefChabre = int.Parse(ClsGlossaire.GetInstance().getcode_Combo("Chambre", "id", "numero", "contact", "refClasse", cmbRefChambre.Text));
-                res.DateEntree = txtDateEntree.Text;
+                res.RefClient = int.Parse(ClsGlossaire.GetInstance().getcode_Combo("Client", "id", "noms", cmbRefClient.Text));
+                res.RefChabre = int.Parse(ClsGlossaire.GetInstance().getcode_Combo("Chambre", "id", "numero", cmbRefChambre.Text));
+                res.DateEntree = DateTime.Parse(txtDateEntree.Text);
 
                 if (a == 1)
                 {
@@ -84,7 +85,7 @@ namespace Gestion_hotel.Formulaires
 
         private void btnDeleteReserv_Click(object sender, EventArgs e)
         {
-            saveReservation(3);
+
         }
 
         private void dgvReserv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -96,10 +97,42 @@ namespace Gestion_hotel.Formulaires
                 cmbRefClient.Text = row.Cells["refClient"].Value.ToString();
                 cmbRefChambre.Text = row.Cells["refChabre"].Value.ToString();
                 txtDateEntree.Text = row.Cells["dateEntree"].Value.ToString();
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 return;
             }
+        }
+
+        private void RechercherReservation(string motCle)
+        {
+            try
+            {
+                string query = @"
+            SELECT R.id, R.refClient, R.refChabre, R.dateEntree, C.noms AS NomClient, CH.numero AS NumeroChambre
+            FROM Reservation R
+            INNER JOIN Client C ON R.refClient = C.id
+            INNER JOIN Chambre CH ON R.refChabre = CH.id
+            WHERE C.noms LIKE @motCle OR CH.numero LIKE @motCle OR R.dateEntree LIKE @motCle";
+
+                SqlConnection con = new SqlConnection(ClsConnexion.Way);
+                SqlDataAdapter da = new SqlDataAdapter(query, con);
+                da.SelectCommand.Parameters.AddWithValue("@motCle", "%" + motCle + "%");
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvReserv.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de recherche : " + ex.Message);
+            }
+        }
+
+
+        private void txtSearchReserv_TextChanged(object sender, EventArgs e)
+        {
+            RechercherReservation(txtSearchReserv.Text);
         }
     }
 }

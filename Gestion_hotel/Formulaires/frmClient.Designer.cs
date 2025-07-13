@@ -306,6 +306,7 @@
             txtRechercheClient.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtRechercheClient.Size = new Size(510, 36);
             txtRechercheClient.TabIndex = 12;
+            txtRechercheClient.TextChanged += txtRechercheClient_TextChanged;
             // 
             // btnActClient
             // 

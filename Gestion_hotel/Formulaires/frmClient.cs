@@ -1,4 +1,5 @@
 ﻿using Gestion_hotel.Classes;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -122,10 +123,42 @@ namespace Gestion_hotel.Formulaires
                 txtNomClient.Text = row.Cells["noms"].Value.ToString();
                 txtAdresseClient.Text = row.Cells["adresse"].Value.ToString();
                 txtContactClient.Text = row.Cells["contact"].Value.ToString();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return;
             }
+        }
+
+        private void RechercherClient(string motCle)
+        {
+            try
+            {
+                string query = @"
+            SELECT id, noms, adresse, contact
+            FROM Client
+            WHERE noms LIKE @motCle 
+               OR adresse LIKE @motCle 
+               OR contact LIKE @motCle";
+
+                SqlConnection con = new SqlConnection(ClsConnexion.Way);
+                SqlDataAdapter da = new SqlDataAdapter(query, con);
+                da.SelectCommand.Parameters.AddWithValue("@motCle", "%" + motCle + "%");
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvClient.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de recherche client : " + ex.Message);
+            }
+        }
+
+
+        private void txtRechercheClient_TextChanged(object sender, EventArgs e)
+        {
+            RechercherClient(txtRechercheClient.Text);
         }
     }
 }

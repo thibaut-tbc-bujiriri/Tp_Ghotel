@@ -47,9 +47,9 @@ namespace Gestion_hotel.Classes
             {
                 InitialiseConnexion();
                 con.Open();
-                cmd = new SqlCommand("EXEC saveClient @id, @nom,@adresse,@contact", con);
+                cmd = new SqlCommand("EXEC saveClient @id, @noms,@adresse,@contact", con);
                 cmd.Parameters.AddWithValue("@id", Cli.Id);
-                cmd.Parameters.AddWithValue("@Nom", Cli.Noms);
+                cmd.Parameters.AddWithValue("@noms", Cli.Noms);
                 cmd.Parameters.AddWithValue("@Adresse", Cli.Adresse);
                 cmd.Parameters.AddWithValue("@Contact", Cli.Contact);
                 cmd.ExecuteNonQuery();
@@ -165,7 +165,7 @@ namespace Gestion_hotel.Classes
                 InitialiseConnexion();
                 con.Open();
                 cmd = new SqlCommand("delete from " + nomTale + " where " + champId + " = @id", con);
-                cmd.Parameters.AddWithValue("@Nom", id);
+                cmd.Parameters.AddWithValue("@id", id);
                 cmd.ExecuteNonQuery();
                 con.Close();
 
@@ -204,7 +204,7 @@ namespace Gestion_hotel.Classes
 
         //ACCEDER AUS COMBOBOX
 
-        public string getcode_Combo(string nomTable, string nomChampId, string nomChamp, string valeur, string v, string text)
+        public string getcode_Combo(string nomTable, string nomChampId, string nomChamp, string valeur)
         {
             string IdData = "";
             try
