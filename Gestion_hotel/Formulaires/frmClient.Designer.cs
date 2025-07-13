@@ -146,6 +146,7 @@
             // 
             // dgvClient
             // 
+            dgvClient.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = Color.White;
             dgvClient.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -193,6 +194,7 @@
             dgvClient.ThemeStyle.RowsStyle.Height = 25;
             dgvClient.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dgvClient.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dgvClient.CellDoubleClick += dgvClient_CellDoubleClick;
             // 
             // label6
             // 

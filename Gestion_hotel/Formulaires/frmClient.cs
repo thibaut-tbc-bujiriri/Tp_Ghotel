@@ -28,7 +28,7 @@ namespace Gestion_hotel.Formulaires
 
             if (a == 1)
             {
-                if(txtNomClient.Text == "" || txtAdresseClient.Text == "" || txtContactClient.Text == "")
+                if (txtNomClient.Text == "" || txtAdresseClient.Text == "" || txtContactClient.Text == "")
                 {
                     MessageBox.Show("Veuillez remplir tous les champs", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -40,7 +40,7 @@ namespace Gestion_hotel.Formulaires
                     MessageBox.Show("Client Enregistré avec succès", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     clear();
                 }
-                
+
             }
             else if (a == 2)
             {
@@ -65,9 +65,9 @@ namespace Gestion_hotel.Formulaires
                 }
                 else
                 {
-                    ClsGlossaire.GetInstance().DeleteData("tClient", "Id", int.Parse(txtIdClient.Text));
-                    dgvClient.DataSource = ClsGlossaire.GetInstance().loadData("Client");
+                    ClsGlossaire.GetInstance().DeleteData("Client", "id", int.Parse(txtIdClient.Text));
                     MessageBox.Show("Client Supprimé avec succès", "Suppression", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgvClient.DataSource = ClsGlossaire.GetInstance().loadData("Client");
                     clear();
                 }
             }
@@ -111,6 +111,21 @@ namespace Gestion_hotel.Formulaires
         private void btnDeleteClient_Click(object sender, EventArgs e)
         {
             saveClient(3);
+        }
+
+        private void dgvClient_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                DataGridViewRow row = dgvClient.Rows[e.RowIndex];
+                txtIdClient.Text = row.Cells["id"].Value.ToString();
+                txtNomClient.Text = row.Cells["noms"].Value.ToString();
+                txtAdresseClient.Text = row.Cells["adresse"].Value.ToString();
+                txtContactClient.Text = row.Cells["contact"].Value.ToString();
+            }catch(Exception ex)
+            {
+                return;
+            }
         }
     }
 }

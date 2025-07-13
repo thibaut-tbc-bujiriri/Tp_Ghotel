@@ -28,38 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReservation));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             button1 = new Button();
             btnDeleteReserv = new Guna.UI2.WinForms.Guna2Button();
             btnModReserv = new Guna.UI2.WinForms.Guna2Button();
             btnAddReserv = new Guna.UI2.WinForms.Guna2Button();
             btnActReserv = new Guna.UI2.WinForms.Guna2Button();
-            txtRechercheClient = new Guna.UI2.WinForms.Guna2TextBox();
-            txtContactClient = new Guna.UI2.WinForms.Guna2TextBox();
-            txtAdresseClient = new Guna.UI2.WinForms.Guna2TextBox();
-            txtNomClient = new Guna.UI2.WinForms.Guna2TextBox();
-            txtIdClient = new Guna.UI2.WinForms.Guna2TextBox();
+            txtSearchReserv = new Guna.UI2.WinForms.Guna2TextBox();
+            txtIdReserv = new Guna.UI2.WinForms.Guna2TextBox();
             dgvReserv = new Guna.UI2.WinForms.Guna2DataGridView();
             label5 = new Label();
             label4 = new Label();
@@ -69,6 +66,9 @@
             pictureBox1 = new PictureBox();
             label6 = new Label();
             panel1 = new Panel();
+            txtDateEntree = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            cmbRefClient = new Guna.UI2.WinForms.Guna2ComboBox();
+            cmbRefChambre = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)dgvReserv).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -85,11 +85,12 @@
             button1.TabIndex = 35;
             button1.Text = "X";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // btnDeleteReserv
             // 
             btnDeleteReserv.BorderRadius = 5;
-            btnDeleteReserv.CustomizableEdges = customizableEdges19;
+            btnDeleteReserv.CustomizableEdges = customizableEdges1;
             btnDeleteReserv.DisabledState.BorderColor = Color.DarkGray;
             btnDeleteReserv.DisabledState.CustomBorderColor = Color.DarkGray;
             btnDeleteReserv.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -99,15 +100,16 @@
             btnDeleteReserv.ForeColor = Color.White;
             btnDeleteReserv.Location = new Point(785, 262);
             btnDeleteReserv.Name = "btnDeleteReserv";
-            btnDeleteReserv.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btnDeleteReserv.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnDeleteReserv.Size = new Size(123, 46);
             btnDeleteReserv.TabIndex = 34;
             btnDeleteReserv.Text = "Supprimer";
+            btnDeleteReserv.Click += btnDeleteReserv_Click;
             // 
             // btnModReserv
             // 
             btnModReserv.BorderRadius = 5;
-            btnModReserv.CustomizableEdges = customizableEdges21;
+            btnModReserv.CustomizableEdges = customizableEdges3;
             btnModReserv.DisabledState.BorderColor = Color.DarkGray;
             btnModReserv.DisabledState.CustomBorderColor = Color.DarkGray;
             btnModReserv.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -117,15 +119,16 @@
             btnModReserv.ForeColor = Color.White;
             btnModReserv.Location = new Point(656, 262);
             btnModReserv.Name = "btnModReserv";
-            btnModReserv.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            btnModReserv.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnModReserv.Size = new Size(123, 46);
             btnModReserv.TabIndex = 33;
             btnModReserv.Text = "Modifier";
+            btnModReserv.Click += btnModReserv_Click;
             // 
             // btnAddReserv
             // 
             btnAddReserv.BorderRadius = 5;
-            btnAddReserv.CustomizableEdges = customizableEdges23;
+            btnAddReserv.CustomizableEdges = customizableEdges5;
             btnAddReserv.DisabledState.BorderColor = Color.DarkGray;
             btnAddReserv.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddReserv.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -135,15 +138,16 @@
             btnAddReserv.ForeColor = Color.White;
             btnAddReserv.Location = new Point(527, 262);
             btnAddReserv.Name = "btnAddReserv";
-            btnAddReserv.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            btnAddReserv.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnAddReserv.Size = new Size(123, 46);
             btnAddReserv.TabIndex = 32;
             btnAddReserv.Text = "Ajouter";
+            btnAddReserv.Click += btnAddReserv_Click;
             // 
             // btnActReserv
             // 
             btnActReserv.BorderRadius = 5;
-            btnActReserv.CustomizableEdges = customizableEdges25;
+            btnActReserv.CustomizableEdges = customizableEdges7;
             btnActReserv.DisabledState.BorderColor = Color.DarkGray;
             btnActReserv.DisabledState.CustomBorderColor = Color.DarkGray;
             btnActReserv.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -153,134 +157,76 @@
             btnActReserv.ForeColor = Color.White;
             btnActReserv.Location = new Point(398, 262);
             btnActReserv.Name = "btnActReserv";
-            btnActReserv.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            btnActReserv.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnActReserv.Size = new Size(123, 46);
             btnActReserv.TabIndex = 31;
             btnActReserv.Text = "Actualiser";
+            btnActReserv.Click += btnActReserv_Click;
             // 
-            // txtRechercheClient
+            // txtSearchReserv
             // 
-            txtRechercheClient.BorderRadius = 15;
-            txtRechercheClient.CustomizableEdges = customizableEdges27;
-            txtRechercheClient.DefaultText = "";
-            txtRechercheClient.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtRechercheClient.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtRechercheClient.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtRechercheClient.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtRechercheClient.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRechercheClient.Font = new Font("Segoe UI", 9F);
-            txtRechercheClient.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtRechercheClient.Location = new Point(398, 321);
-            txtRechercheClient.Name = "txtRechercheClient";
-            txtRechercheClient.PlaceholderText = "";
-            txtRechercheClient.SelectedText = "";
-            txtRechercheClient.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            txtRechercheClient.Size = new Size(510, 36);
-            txtRechercheClient.TabIndex = 30;
+            txtSearchReserv.BorderRadius = 15;
+            txtSearchReserv.CustomizableEdges = customizableEdges9;
+            txtSearchReserv.DefaultText = "";
+            txtSearchReserv.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtSearchReserv.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtSearchReserv.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtSearchReserv.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtSearchReserv.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSearchReserv.Font = new Font("Segoe UI", 9F);
+            txtSearchReserv.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSearchReserv.Location = new Point(398, 321);
+            txtSearchReserv.Name = "txtSearchReserv";
+            txtSearchReserv.PlaceholderText = "";
+            txtSearchReserv.SelectedText = "";
+            txtSearchReserv.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtSearchReserv.Size = new Size(510, 36);
+            txtSearchReserv.TabIndex = 30;
             // 
-            // txtContactClient
+            // txtIdReserv
             // 
-            txtContactClient.BorderRadius = 15;
-            txtContactClient.CustomizableEdges = customizableEdges29;
-            txtContactClient.DefaultText = "";
-            txtContactClient.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtContactClient.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtContactClient.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtContactClient.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtContactClient.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtContactClient.Font = new Font("Segoe UI", 9F);
-            txtContactClient.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtContactClient.Location = new Point(450, 209);
-            txtContactClient.Name = "txtContactClient";
-            txtContactClient.PlaceholderText = "";
-            txtContactClient.SelectedText = "";
-            txtContactClient.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            txtContactClient.Size = new Size(414, 36);
-            txtContactClient.TabIndex = 29;
-            // 
-            // txtAdresseClient
-            // 
-            txtAdresseClient.BorderRadius = 15;
-            txtAdresseClient.CustomizableEdges = customizableEdges31;
-            txtAdresseClient.DefaultText = "";
-            txtAdresseClient.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtAdresseClient.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtAdresseClient.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtAdresseClient.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtAdresseClient.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtAdresseClient.Font = new Font("Segoe UI", 9F);
-            txtAdresseClient.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtAdresseClient.Location = new Point(450, 153);
-            txtAdresseClient.Name = "txtAdresseClient";
-            txtAdresseClient.PlaceholderText = "";
-            txtAdresseClient.SelectedText = "";
-            txtAdresseClient.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            txtAdresseClient.Size = new Size(414, 36);
-            txtAdresseClient.TabIndex = 28;
-            // 
-            // txtNomClient
-            // 
-            txtNomClient.BorderRadius = 15;
-            txtNomClient.CustomizableEdges = customizableEdges33;
-            txtNomClient.DefaultText = "";
-            txtNomClient.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtNomClient.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtNomClient.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtNomClient.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtNomClient.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNomClient.Font = new Font("Segoe UI", 9F);
-            txtNomClient.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNomClient.Location = new Point(448, 106);
-            txtNomClient.Name = "txtNomClient";
-            txtNomClient.PlaceholderText = "";
-            txtNomClient.SelectedText = "";
-            txtNomClient.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            txtNomClient.Size = new Size(414, 36);
-            txtNomClient.TabIndex = 27;
-            // 
-            // txtIdClient
-            // 
-            txtIdClient.BorderRadius = 15;
-            txtIdClient.CustomizableEdges = customizableEdges35;
-            txtIdClient.DefaultText = "";
-            txtIdClient.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtIdClient.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtIdClient.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtIdClient.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtIdClient.Enabled = false;
-            txtIdClient.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtIdClient.Font = new Font("Segoe UI", 9F);
-            txtIdClient.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtIdClient.Location = new Point(448, 53);
-            txtIdClient.Name = "txtIdClient";
-            txtIdClient.PlaceholderText = "";
-            txtIdClient.SelectedText = "";
-            txtIdClient.ShadowDecoration.CustomizableEdges = customizableEdges36;
-            txtIdClient.Size = new Size(188, 36);
-            txtIdClient.TabIndex = 26;
+            txtIdReserv.BorderRadius = 15;
+            txtIdReserv.CustomizableEdges = customizableEdges11;
+            txtIdReserv.DefaultText = "";
+            txtIdReserv.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtIdReserv.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtIdReserv.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtIdReserv.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtIdReserv.Enabled = false;
+            txtIdReserv.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtIdReserv.Font = new Font("Segoe UI", 9F);
+            txtIdReserv.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtIdReserv.Location = new Point(448, 53);
+            txtIdReserv.Name = "txtIdReserv";
+            txtIdReserv.PlaceholderText = "";
+            txtIdReserv.SelectedText = "";
+            txtIdReserv.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtIdReserv.Size = new Size(188, 36);
+            txtIdReserv.TabIndex = 26;
             // 
             // dgvReserv
             // 
-            dataGridViewCellStyle4.BackColor = Color.White;
-            dgvReserv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dgvReserv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dgvReserv.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dgvReserv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvReserv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvReserv.ColumnHeadersHeight = 4;
             dgvReserv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.White;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            dgvReserv.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvReserv.DefaultCellStyle = dataGridViewCellStyle3;
             dgvReserv.GridColor = Color.FromArgb(231, 229, 255);
             dgvReserv.Location = new Point(246, 369);
             dgvReserv.Name = "dgvReserv";
@@ -308,6 +254,7 @@
             dgvReserv.ThemeStyle.RowsStyle.Height = 25;
             dgvReserv.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dgvReserv.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dgvReserv.CellDoubleClick += dgvReserv_CellDoubleClick;
             // 
             // label5
             // 
@@ -390,21 +337,74 @@
             panel1.Size = new Size(246, 549);
             panel1.TabIndex = 18;
             // 
+            // txtDateEntree
+            // 
+            txtDateEntree.BorderRadius = 15;
+            txtDateEntree.Checked = true;
+            txtDateEntree.CustomizableEdges = customizableEdges13;
+            txtDateEntree.FillColor = Color.White;
+            txtDateEntree.Font = new Font("Segoe UI", 9F);
+            txtDateEntree.Format = DateTimePickerFormat.Custom;
+            txtDateEntree.Location = new Point(450, 208);
+            txtDateEntree.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            txtDateEntree.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            txtDateEntree.Name = "txtDateEntree";
+            txtDateEntree.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtDateEntree.Size = new Size(414, 36);
+            txtDateEntree.TabIndex = 36;
+            txtDateEntree.Value = new DateTime(2025, 7, 13, 0, 8, 52, 864);
+            // 
+            // cmbRefClient
+            // 
+            cmbRefClient.BackColor = Color.Transparent;
+            cmbRefClient.BorderRadius = 15;
+            cmbRefClient.CustomizableEdges = customizableEdges15;
+            cmbRefClient.DrawMode = DrawMode.OwnerDrawFixed;
+            cmbRefClient.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbRefClient.FocusedColor = Color.FromArgb(94, 148, 255);
+            cmbRefClient.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cmbRefClient.Font = new Font("Segoe UI", 10F);
+            cmbRefClient.ForeColor = Color.FromArgb(68, 88, 112);
+            cmbRefClient.ItemHeight = 30;
+            cmbRefClient.Location = new Point(450, 101);
+            cmbRefClient.Name = "cmbRefClient";
+            cmbRefClient.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            cmbRefClient.Size = new Size(413, 36);
+            cmbRefClient.TabIndex = 37;
+            // 
+            // cmbRefChambre
+            // 
+            cmbRefChambre.BackColor = Color.Transparent;
+            cmbRefChambre.BorderRadius = 15;
+            cmbRefChambre.CustomizableEdges = customizableEdges17;
+            cmbRefChambre.DrawMode = DrawMode.OwnerDrawFixed;
+            cmbRefChambre.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbRefChambre.FocusedColor = Color.FromArgb(94, 148, 255);
+            cmbRefChambre.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cmbRefChambre.Font = new Font("Segoe UI", 10F);
+            cmbRefChambre.ForeColor = Color.FromArgb(68, 88, 112);
+            cmbRefChambre.ItemHeight = 30;
+            cmbRefChambre.Location = new Point(451, 143);
+            cmbRefChambre.Name = "cmbRefChambre";
+            cmbRefChambre.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            cmbRefChambre.Size = new Size(413, 36);
+            cmbRefChambre.TabIndex = 38;
+            // 
             // frmReservation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(927, 549);
+            Controls.Add(cmbRefChambre);
+            Controls.Add(cmbRefClient);
+            Controls.Add(txtDateEntree);
             Controls.Add(button1);
             Controls.Add(btnDeleteReserv);
             Controls.Add(btnModReserv);
             Controls.Add(btnAddReserv);
             Controls.Add(btnActReserv);
-            Controls.Add(txtRechercheClient);
-            Controls.Add(txtContactClient);
-            Controls.Add(txtAdresseClient);
-            Controls.Add(txtNomClient);
-            Controls.Add(txtIdClient);
+            Controls.Add(txtSearchReserv);
+            Controls.Add(txtIdReserv);
             Controls.Add(dgvReserv);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -415,6 +415,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmReservation";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmReservation";
             Load += frmReservation_Load;
             ((System.ComponentModel.ISupportInitialize)dgvReserv).EndInit();
@@ -431,11 +432,8 @@
         private Guna.UI2.WinForms.Guna2Button btnModReserv;
         private Guna.UI2.WinForms.Guna2Button btnAddReserv;
         private Guna.UI2.WinForms.Guna2Button btnActReserv;
-        private Guna.UI2.WinForms.Guna2TextBox txtRechercheClient;
-        private Guna.UI2.WinForms.Guna2TextBox txtContactClient;
-        private Guna.UI2.WinForms.Guna2TextBox txtAdresseClient;
-        private Guna.UI2.WinForms.Guna2TextBox txtNomClient;
-        private Guna.UI2.WinForms.Guna2TextBox txtIdClient;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearchReserv;
+        private Guna.UI2.WinForms.Guna2TextBox txtIdReserv;
         private Guna.UI2.WinForms.Guna2DataGridView dgvReserv;
         private Label label5;
         private Label label4;
@@ -445,5 +443,8 @@
         private PictureBox pictureBox1;
         private Label label6;
         private Panel panel1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtDateEntree;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbRefClient;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbRefChambre;
     }
 }

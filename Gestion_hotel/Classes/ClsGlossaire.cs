@@ -164,7 +164,7 @@ namespace Gestion_hotel.Classes
             {
                 InitialiseConnexion();
                 con.Open();
-                cmd = new SqlCommand("delete from " + nomTale + " where " + champId + " = @Id", con);
+                cmd = new SqlCommand("delete from " + nomTale + " where " + champId + " = @id", con);
                 cmd.Parameters.AddWithValue("@Nom", id);
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -204,7 +204,7 @@ namespace Gestion_hotel.Classes
 
         //ACCEDER AUS COMBOBOX
 
-        public string getcode_Combo(string nomTable, string nomChampId, string nomChamp, string valeur)
+        public string getcode_Combo(string nomTable, string nomChampId, string nomChamp, string valeur, string v, string text)
         {
             string IdData = "";
             try
