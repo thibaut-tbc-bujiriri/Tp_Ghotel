@@ -48,6 +48,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             button1 = new Button();
             btnModReserv = new Guna.UI2.WinForms.Guna2Button();
             btnAddReserv = new Guna.UI2.WinForms.Guna2Button();
@@ -66,6 +68,8 @@
             txtDateEntree = new Guna.UI2.WinForms.Guna2DateTimePicker();
             cmbRefClient = new Guna.UI2.WinForms.Guna2ComboBox();
             cmbRefChambre = new Guna.UI2.WinForms.Guna2ComboBox();
+            label7 = new Label();
+            txtDateSortie = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)dgvReserv).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -95,10 +99,10 @@
             btnModReserv.FillColor = Color.Black;
             btnModReserv.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnModReserv.ForeColor = Color.White;
-            btnModReserv.Location = new Point(740, 262);
+            btnModReserv.Location = new Point(768, 51);
             btnModReserv.Name = "btnModReserv";
             btnModReserv.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnModReserv.Size = new Size(123, 46);
+            btnModReserv.Size = new Size(94, 40);
             btnModReserv.TabIndex = 33;
             btnModReserv.Text = "Modifier";
             btnModReserv.Click += btnModReserv_Click;
@@ -114,17 +118,17 @@
             btnAddReserv.FillColor = Color.Black;
             btnAddReserv.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddReserv.ForeColor = Color.White;
-            btnAddReserv.Location = new Point(593, 262);
+            btnAddReserv.Location = new Point(650, 51);
             btnAddReserv.Name = "btnAddReserv";
             btnAddReserv.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnAddReserv.Size = new Size(123, 46);
+            btnAddReserv.Size = new Size(91, 40);
             btnAddReserv.TabIndex = 32;
             btnAddReserv.Text = "Ajouter";
             btnAddReserv.Click += btnAddReserv_Click;
             // 
             // btnActReserv
             // 
-            btnActReserv.BorderRadius = 5;
+            btnActReserv.BorderRadius = 50;
             btnActReserv.CustomizableEdges = customizableEdges5;
             btnActReserv.DisabledState.BorderColor = Color.DarkGray;
             btnActReserv.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -133,12 +137,11 @@
             btnActReserv.FillColor = Color.Black;
             btnActReserv.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnActReserv.ForeColor = Color.White;
-            btnActReserv.Location = new Point(448, 262);
+            btnActReserv.Location = new Point(878, 262);
             btnActReserv.Name = "btnActReserv";
             btnActReserv.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnActReserv.Size = new Size(123, 46);
+            btnActReserv.Size = new Size(40, 36);
             btnActReserv.TabIndex = 31;
-            btnActReserv.Text = "Actualiser";
             btnActReserv.Click += btnActReserv_Click;
             // 
             // txtSearchReserv
@@ -369,11 +372,40 @@
             cmbRefChambre.Size = new Size(413, 36);
             cmbRefChambre.TabIndex = 38;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(299, 262);
+            label7.Name = "label7";
+            label7.Size = new Size(121, 25);
+            label7.TabIndex = 39;
+            label7.Text = "Date Sortie";
+            // 
+            // txtDateSortie
+            // 
+            txtDateSortie.BorderRadius = 15;
+            txtDateSortie.Checked = true;
+            txtDateSortie.CustomizableEdges = customizableEdges17;
+            txtDateSortie.FillColor = Color.White;
+            txtDateSortie.Font = new Font("Segoe UI", 9F);
+            txtDateSortie.Format = DateTimePickerFormat.Long;
+            txtDateSortie.Location = new Point(448, 262);
+            txtDateSortie.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            txtDateSortie.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            txtDateSortie.Name = "txtDateSortie";
+            txtDateSortie.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtDateSortie.Size = new Size(414, 36);
+            txtDateSortie.TabIndex = 40;
+            txtDateSortie.Value = new DateTime(2025, 7, 13, 0, 8, 52, 864);
+            // 
             // frmReservation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(927, 549);
+            Controls.Add(txtDateSortie);
+            Controls.Add(label7);
             Controls.Add(cmbRefChambre);
             Controls.Add(cmbRefClient);
             Controls.Add(txtDateEntree);
@@ -423,5 +455,7 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker txtDateEntree;
         private Guna.UI2.WinForms.Guna2ComboBox cmbRefClient;
         private Guna.UI2.WinForms.Guna2ComboBox cmbRefChambre;
+        private Label label7;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtDateSortie;
     }
 }

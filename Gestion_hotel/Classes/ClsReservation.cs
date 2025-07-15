@@ -12,10 +12,12 @@ namespace Gestion_hotel.Classes
 	    int refClient ;
         int refChabre  ;
 	    DateTime dateEntree ;
+        DateTime DateSortie;
 
         public int Id { get => id; set => id = value; }
         public int RefClient { get => refClient; set => refClient = value; }
         public int RefChabre { get => refChabre; set => refChabre = value; }
         public DateTime DateEntree { get => dateEntree; set => dateEntree = value; }
+        public DateTime DateSortie1 { get => DateSortie; set => DateSortie = value; }
     }
 }

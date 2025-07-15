@@ -63,6 +63,26 @@ namespace Gestion_hotel.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_windows_10_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-windows-10-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_windows_10_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-windows-10-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sac {
             get {
                 object obj = ResourceManager.GetObject("sac", resourceCulture);

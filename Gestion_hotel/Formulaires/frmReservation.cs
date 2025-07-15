@@ -28,23 +28,45 @@ namespace Gestion_hotel.Formulaires
                 res.RefClient = int.Parse(ClsGlossaire.GetInstance().getcode_Combo("Client", "id", "noms", cmbRefClient.Text));
                 res.RefChabre = int.Parse(ClsGlossaire.GetInstance().getcode_Combo("Chambre", "id", "numero", cmbRefChambre.Text));
                 res.DateEntree = DateTime.Parse(txtDateEntree.Text);
+                res.DateSortie1 = DateTime.Parse(txtDateSortie.Text);
 
                 if (a == 1)
                 {
-                    res.Id = -1;
-                    ClsGlossaire.GetInstance().SaveReservation(res);
-                    dgvReserv.DataSource = ClsGlossaire.GetInstance().loadData("Reservation");
+                    if (cmbRefClient.Text == "" || cmbRefChambre.Text == "" || txtDateEntree.Text == "" || txtDateSortie.Text == "")
+                    {
+                        MessageBox.Show("Veuillez remplir tous les champs", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        res.Id = -1;
+                        ClsGlossaire.GetInstance().SaveReservation(res);
+                        dgvReserv.DataSource = ClsGlossaire.GetInstance().loadData("Reservation");
+                    }
                 }
                 else if (a == 2)
                 {
-                    res.Id = int.Parse(txtIdReserv.Text);
-                    ClsGlossaire.GetInstance().SaveReservation(res);
-                    dgvReserv.DataSource = ClsGlossaire.GetInstance().loadData("Reservation");
+                    if (cmbRefClient.Text == "" || cmbRefChambre.Text == "" || txtDateEntree.Text == "" || txtDateSortie.Text == "")
+                    {
+                        MessageBox.Show("Veuillez remplir tous les champs", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        res.Id = int.Parse(txtIdReserv.Text);
+                        ClsGlossaire.GetInstance().SaveReservation(res);
+                        dgvReserv.DataSource = ClsGlossaire.GetInstance().loadData("Reservation");
+                    }
                 }
                 else if (a == 3)
                 {
-                    ClsGlossaire.GetInstance().DeleteData("Reservation", "id", int.Parse(txtIdReserv.Text));
-                    dgvReserv.DataSource = ClsGlossaire.GetInstance().loadData("Reservation");
+                    if (txtIdReserv.Text == "" || cmbRefClient.Text == "" || cmbRefChambre.Text == "" || txtDateEntree.Text == "" || txtDateSortie.Text == "")
+                    {
+                        MessageBox.Show("Veuillez remplir tous les champs", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        ClsGlossaire.GetInstance().DeleteData("Reservation", "id", int.Parse(txtIdReserv.Text));
+                        dgvReserv.DataSource = ClsGlossaire.GetInstance().loadData("Reservation");
+                    }
                 }
             }
             catch (Exception ex)
@@ -71,6 +93,7 @@ namespace Gestion_hotel.Formulaires
             cmbRefClient.Text = "";
             cmbRefChambre.Text = "";
             txtDateEntree.Text = "";
+            txtDateSortie.Text = "";
         }
 
         private void btnAddReserv_Click(object sender, EventArgs e)
@@ -83,11 +106,6 @@ namespace Gestion_hotel.Formulaires
             saveReservation(2);
         }
 
-        private void btnDeleteReserv_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void dgvReserv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -97,6 +115,7 @@ namespace Gestion_hotel.Formulaires
                 cmbRefClient.Text = row.Cells["refClient"].Value.ToString();
                 cmbRefChambre.Text = row.Cells["refChabre"].Value.ToString();
                 txtDateEntree.Text = row.Cells["dateEntree"].Value.ToString();
+                txtDateSortie.Text = row.Cells["DateSortie"].Value.ToString();
             }
             catch (Exception ex)
             {
@@ -109,7 +128,7 @@ namespace Gestion_hotel.Formulaires
             try
             {
                 string query = @"
-            SELECT R.id, R.refClient, R.refChabre, R.dateEntree, C.noms AS NomClient, CH.numero AS NumeroChambre
+            SELECT R.id, R.refClient, R.refChabre, R.dateEntree, R.DateSortie, C.noms AS NomClient, CH.numero AS NumeroChambre
             FROM Reservation R
             INNER JOIN Client C ON R.refClient = C.id
             INNER JOIN Chambre CH ON R.refChabre = CH.id

@@ -87,11 +87,12 @@ namespace Gestion_hotel.Classes
             {
                 InitialiseConnexion();
                 con.Open();
-                cmd = new SqlCommand("EXEC saveReservation @id,@refClient,@refChabre,@dateEntree", con);
+                cmd = new SqlCommand("EXEC saveReservation @id,@refClient,@refChabre,@dateEntree,@DateSortie", con);
                 cmd.Parameters.AddWithValue("@id", Cli.Id);
                 cmd.Parameters.AddWithValue("@refClient", Cli.RefClient);
                 cmd.Parameters.AddWithValue("@refChabre", Cli.RefChabre);
                 cmd.Parameters.AddWithValue("@dateEntree", Cli.DateEntree);
+                cmd.Parameters.AddWithValue("@DateSortie", Cli.DateSortie1);
                 cmd.ExecuteNonQuery();
                 con.Close();
 
